@@ -1,0 +1,76 @@
+@import '../../scss/abstracts/variables';
+
+.faq-container {
+  border-bottom: 1px $light-grayish-blue solid;
+  margin: 0 24px;
+
+  &:first-child {
+    padding-bottom: 20px;
+  }
+
+  &:not(:first-child) {
+    padding: 20px 0;
+  }
+
+  &:last-child {
+    margin-bottom: 48px;
+  }
+
+  @media only screen and (min-width: 600px) {
+    cursor: pointer;
+  }
+}
+
+.question-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.question {
+  font-size: 13px;
+  font-weight: 400;
+  line-height: 16px;
+  color: $very-dark-grayish-blue;
+  margin: 0 24px 0 0;
+
+  @media only screen and (min-width: 600px) {
+    &:hover {
+      color: $soft-red;
+    }
+  }
+}
+
+.arrow-icon {
+  width: 8px;
+  height: 4px;
+}
+
+.answer {
+  font-size: 12px;
+  font-weight: 400;
+  color: $dark-grayish-blue;
+  animation: fade-in 0.25s ease-in;
+  overflow: hidden;
+  margin-top: 12px;
+}
+
+@keyframes fade-in {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+.active {
+  color: #1e1f36;
+  font-size: 13px;
+  font-weight: 700;
+  line-height: 16px;
+}
+
+.turn {
+  transform: rotate(180deg);
+}

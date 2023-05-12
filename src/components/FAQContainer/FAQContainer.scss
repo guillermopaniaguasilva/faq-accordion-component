@@ -1,0 +1,61 @@
+@import '../../scss/abstracts/variables';
+
+.container {
+  width: 327px;
+  background-color: $white;
+  border-radius: 30px;
+  display: flex;
+  flex-direction: column;
+
+  @media only screen and (min-width: 600px) {
+    width: 920px;
+    flex-direction: row;
+    justify-content: flex-end;
+  }
+}
+
+.heading {
+  font-size: 32px;
+  font-weight: 700;
+  line-height: 40px;
+  margin-top: 132px;
+  text-align: center;
+}
+
+.image-container {
+  position: relative;
+}
+
+.image {
+  width: 237px;
+  height: 215px;
+  background-image: url('../../../public/images/illustration-woman-online-mobile.svg'),
+    url('../../../public/images/bg-pattern-mobile.svg');
+  background-repeat: no-repeat, no-repeat;
+  background-position: top 0px left 0px, bottom 0px right 0px;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  margin-top: -105px;
+  margin-left: -118.5px;
+
+  @media only screen and (min-width: 600px) {
+    width: 472px;
+    height: 509px;
+    background-image: url('../../../public/images/illustration-box-desktop.svg'),
+      url('../../../public/images/illustration-woman-online-desktop.svg'),
+      url('../../../public/images/bg-pattern-desktop.svg');
+    background-position: top 140px left 0px, bottom 155px right 0px,
+      bottom -108px right 0px;
+    margin-top: -170px;
+    margin-left: -490px;
+  }
+}
+
+.faqs-container {
+  margin-top: 38px;
+
+  @media only screen and (min-width: 600px) {
+    width: 460px;
+  }
+}

@@ -1,0 +1,10 @@
+@import '../../scss/abstracts/variables';
+
+.App {
+  min-height: 100vh;
+  background: linear-gradient(to bottom, $soft-violet, $soft-blue);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
